@@ -181,7 +181,7 @@ class BPY_PT_externallpanel(Panel):
         if state == STOPPED:
             tstr = 'start'
         elif state == RUNNING:
-            col.label('listening on ' + statemachine['tempfile'])
+            col.label(text = 'listening on ' + statemachine['tempfile'])
             tstr = 'end'
 
         if tstr:
